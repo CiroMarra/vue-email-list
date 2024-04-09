@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
-    
+    <link rel="stylesheet" href="css/style.css">
     <title>Vue Email List</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+            <ul v-if="emails.length === emailsCount">
+                <li v-for="email in emails" :key="email">{{ email }}</li>
+            </ul>
+    </div>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

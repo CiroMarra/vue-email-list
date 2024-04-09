@@ -1,0 +1,10 @@
+li {
+    list-style-type: none;
+    color: red;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 0;
+}
