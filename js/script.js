@@ -27,9 +27,8 @@ createApp({
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             // gestisce la risposta del server
             .then((response) => {
-                // prende la risposta del server  e poi la pusha nell'array emails
-                const email = response.data.response;
-                this.emails.push(email)
+                // prende la risposta del server  e poi la pusha nell'array email
+                this.emails.push(response.data.response)
 
             });
        
